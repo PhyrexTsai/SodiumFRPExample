@@ -3,24 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.sample;
+package sodium.frp.primitive;
 
+import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import nz.sodium.Cell;
 import nz.sodium.Stream;
 import sodium.frp.Frame;
 import swidgets.SLabel;
-import swidgets.STextField;
 
 /**
  *
  * @author yjtsai
  */
-public class Sample {
+public class Never {
+    public Never() {
+        main(null);
+    }
+    
     public static void main(String[] args){
+        Stream<String> never = new Stream<>();
+        Cell<String> hello = new Cell<>("Hello"); 
         JFrame frame = Frame.draw().template();
-        STextField text = new STextField("12345");
-        frame.add(text);
+        SLabel lbl = new SLabel(hello);
+        frame.add(lbl);
         frame.setSize(400, 160);
         frame.setVisible(true);
     }

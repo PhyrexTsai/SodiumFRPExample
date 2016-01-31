@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.hold;
+package sodium.frp.primitive;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -18,6 +18,10 @@ import swidgets.SLabel;
  * @author yjtsai
  */
 public class Hold {
+    public Hold() {
+        main(null);
+    }
+    
     public static void main(String[] args) {
         JFrame frame = Frame.draw().template();
         SButton red = new SButton("red");

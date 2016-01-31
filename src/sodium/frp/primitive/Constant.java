@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.constant;
+package sodium.frp.primitive;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -17,6 +17,9 @@ import swidgets.STextField;
  * @author yjtsai
  */
 public class Constant {
+    public Constant(){
+        main(null);
+    }
     
     public static void main(String[] args){
         // constant

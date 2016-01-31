@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.snapshot;
+package sodium.frp.primitive;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -19,6 +19,10 @@ import swidgets.STextField;
  * @author yjtsai
  */
 public class Snapshot {
+    public Snapshot() {
+        main(null);
+    }
+    
     public static void main(String[] args) {
         JFrame view = Frame.draw().template();
         STextField english = new STextField("I like FRP");

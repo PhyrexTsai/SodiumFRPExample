@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.merge;
+package sodium.frp.primitive;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -19,6 +19,10 @@ import swidgets.STextField;
 public class Merge {
     private static final String THANK_ZHTW = "謝謝";
     private static final String THANK_ENUS = "Thank you";
+    
+    public Merge() {
+        main(null);
+    }
     
     public static void main(String[] args) {
         JFrame frame = Frame.draw().template();

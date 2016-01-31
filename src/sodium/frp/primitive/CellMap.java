@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.map;
+package sodium.frp.primitive;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -17,6 +17,10 @@ import swidgets.STextField;
  * @author yjtsai
  */
 public class CellMap {
+    public CellMap() {
+        main(null);
+    }
+    
     public static void main(String[] args){
         JFrame frame = Frame.draw().template();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

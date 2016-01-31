@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.lift;
+package sodium.frp.primitive;
 
 import javax.swing.JFrame;
 import nz.sodium.Cell;
@@ -16,6 +16,10 @@ import swidgets.STextField;
  * @author yjtsai
  */
 public class Lift {
+    public Lift() {
+        main(null);
+    }
+    
     public static void main(String[] args) {
         JFrame frame = Frame.draw().template();
         STextField txtA = new STextField("5");

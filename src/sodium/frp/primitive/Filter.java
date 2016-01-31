@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sodium.frp.filter;
+package sodium.frp.primitive;
 
 import javax.swing.JFrame;
 import nz.sodium.Cell;
@@ -18,6 +18,10 @@ import swidgets.STextField;
  * @author yjtsai
  */
 public class Filter {
+    public Filter() {
+        main(null);
+    }
+    
     // 這邊是在做 stream 的 filter，當發生吻合事件的時候才會被處發
     public static void main(String[] args) {
         JFrame view = Frame.draw().template();
