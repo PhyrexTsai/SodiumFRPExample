@@ -6,8 +6,8 @@
 package sodium.frp;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Method;
 
 /**
  *
@@ -19,6 +19,8 @@ public class Sodium {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("Support primitives : 'CellMap', 'StreamMap', 'Constant', 'Filter', 'Hold', 'Merge', 'Never', 'Sample', 'Snapshot'.");
+        System.out.println("Use 'quit' to quit.");
         System.out.println("Type a FRP primitive to start : ");
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -33,8 +35,10 @@ public class Sodium {
             }
 
             in.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Something went wrong, please try again!");
+        } catch (IOException | InstantiationException | IllegalAccessException ex) {
+            System.out.println("Something went wrong, please try again!");
         }
     }
 
